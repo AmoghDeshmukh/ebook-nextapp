@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 import {DataContext} from '../store/GlobalState'
@@ -47,7 +48,7 @@ function NavBar() {
     return(
         <li className="nav-item dropdown"> 
            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <img src={auth.user.avatar} alt={auth.user.avatar} 
+             <Image src={auth.user.avatar} alt={auth.user.avatar} 
               style={{
                 borderRadius: '50%', width: '30px', height: '30px',
                 transform: 'translateY(-3px)', marginRight: '3px'

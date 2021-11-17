@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState, useContext, useEffect } from 'react'
 import { DataContext } from '../store/GlobalState'
 import Link from 'next/link'
@@ -100,7 +101,7 @@ const Profile = () => {
                     </h3>
 
              <div className="avatar">
-                 <img src={avatar ? URL.createObjectURL(avatar) : auth.user.avatar} 
+                 <Image src={avatar ? URL.createObjectURL(avatar) : auth.user.avatar} 
                         alt="avatar"/>
                  <span>
                      <i className="fas fa-camera"></i>

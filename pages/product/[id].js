@@ -1,5 +1,6 @@
 
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState, useContext } from 'react'
 import { getData } from '../../utils/fetchData'
 import { DataContext } from '../../store/GlobalState'
@@ -26,7 +27,7 @@ const DetailProduct = (props) => {
             </Head>
          
         <div className="col-md-6">
-            <img src={ product.images[tab].url } alt={ product.images[tab].url }
+            <Image src={ product.images[tab].url } alt={ product.images[tab].url }
             className="d-block img-thumbnail rounded mt-4 w-100" 
             style={{height: '350px'}} />
 

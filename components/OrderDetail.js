@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import PaypalBtn from './paypalBtn'
 import { patchData } from '../utils/fetchData'
 import { updateItem } from '../store/Actions'
@@ -75,7 +76,7 @@ const OrderDetail = ({orderDetail, state, dispatch}) => {
                                 order.cart.map(item => (
                                     <div className="row border-bottom mx-0 p-2 justify-content-between align-items-center"
                                     key={item._id} style={{maxWidth: '550px'}}>
-                                     <img src={item.images[0].url} alt={item.images[0].url}
+                                     <Image src={item.images[0].url} alt={item.images[0].url}
                                      style={{width: '50px', height: '45px', objectFit: 'cover'}} />
 
                                      <h5 className="flex-fill text-secondary px-3 m-0">

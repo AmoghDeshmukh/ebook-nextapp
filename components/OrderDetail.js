@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import paypalBtn from './PaypalBtn'
+import PaypalBtn from './PaypalBtn'
 import { patchData } from '../utils/fetchData'
 import { updateItem } from '../store/Actions'
 
@@ -102,7 +102,7 @@ const OrderDetail = ({orderDetail, state, dispatch}) => {
                     !order.paid && auth.user.role !== 'admin' &&
                     <div className="p-4">
                         <h2 className="mb-4 text-uppercase">Total: Rs:-{order.total}</h2>
-                        <paypalBtn order={order} />
+                        <PaypalBtn order={order} />
                     </div>
                 }
              </div>

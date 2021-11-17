@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { useContext } from 'react'
 import {DataContext} from '../store/GlobalState'
 import Link from 'next/Link'
@@ -35,7 +36,7 @@ const Users = () => {
                         <th>{index + 1}</th>
                         <th>{user._id}</th>
                         <th>
-                        <img src={user.avatar} alt={user.avatar}
+                        <Image src={user.avatar} alt={user.avatar}
                         style={{ width: '30px', height: '30px', 
                         overflow: 'hidden', objectFit: 'cover'
                           }} />

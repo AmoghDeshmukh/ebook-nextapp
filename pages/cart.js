@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import { useContext, useState, useEffect } from 'react'
 import { DataContext } from '../store/GlobalState'
 import CartItem from '../components/CartItem'
@@ -91,7 +92,7 @@ const Cart = () => {
 }
 
   if( cart.length === 0 ) 
-    return <img className="img-responsive w-100" src="/download.png" alt="not empty" />
+    return <Image className="img-responsive w-100" src="/download.png" alt="not empty" />
 
     return(
       <div className="row mx-auto">

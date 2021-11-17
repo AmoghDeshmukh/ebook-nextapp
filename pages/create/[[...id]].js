@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import {useState, useContext} from 'react'
 import {DataContext} from '../../store/GlobalState'
 import {imageUpload} from '../../utils/ImageUpload'
@@ -165,7 +166,7 @@ const ProductsManager = () => {
                         {
                             images.map((img, index) => (
                                 <div key={index} className="file_img my-1">
-                                    <img src={img.url ? img.url : URL.createObjectURL(img)}
+                                    <Image src={img.url ? img.url : URL.createObjectURL(img)}
                                      alt="" className="img-thumbnail rounded" />
 
                               <span onClick={() => deleteImage(index)}>X</span>

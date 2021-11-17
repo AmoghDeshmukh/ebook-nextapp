@@ -3,8 +3,8 @@ import { patchData } from '../utils/fetchData'
 import { DataContext } from "../store/GlobalState"
 import { updateItem } from "../store/Actions"
 
-const paypalBtn = ({order}) => {
-    const RefPaypalBtn = useRef()
+const PaypalBtn = ({order}) => {
+    const refPaypalBtn = useRef()
     const {state, dispatch} = useContext(DataContext)
     const { auth, orders} = state
 
@@ -44,10 +44,10 @@ const paypalBtn = ({order}) => {
                 // This function shows a transaction success message to your buyer.
               });
             }
-          }).render(RefPaypalBtn.current);
+          }).render(refPaypalBtn.current);
     },[])
     return(
-        <div ref={RefPaypalBtn}></div>
+        <div ref={refPaypalBtn}></div>
     )
 }
-export default paypalBtn
+export default PaypalBtn

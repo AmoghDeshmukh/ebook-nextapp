@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import PaypalBtn from './paypalBtn'
+import PaypalBtn from './PaypalBtn'
 import { patchData } from '../utils/fetchData'
 import { updateItem } from '../store/Actions'
 

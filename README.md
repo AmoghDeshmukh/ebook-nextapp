@@ -15,6 +15,3 @@ c)Run the project http://localhost:3000
 
 d)To run: npm run dev
 
-## User Interface:
-
-![user-interface](https://drive.google.com/file/d/1xGpqUdD2PeA7ZTxYbdT6wmPbclRGwgO1/view?usp=sharing)

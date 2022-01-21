@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    "BASE_URL": "http://localhost:3000",
+    "BASE_URL": "https://nextby-amogh.herokuapp.com",
     "MONGODB_URL": "mongodb+srv://amogh05:Amogh_2001@cluster0.duej2.mongodb.net/amogh_ecom?retryWrites=true&w=majority",
     "ACCESS_TOKEN_SECRET": "amogh054103628.604389506",
     "REFRESH_TOKEN_SECRET": "amogh05secret10849321rere745602435",

@@ -10,6 +10,8 @@ Demo: https://ecom-by-amogh.herokuapp.com
 a)npm install
 
 b)Connect to your mongodb and add info in next.config.js
+
 c)Run the project http://localhost:3000
+
 d)To run: npm run dev
 
